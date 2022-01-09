@@ -1,0 +1,28 @@
+.social__menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.social__menu-item {
+  & + &::before {
+    content: '';
+
+    border-right: 1px solid $line-social-color;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
