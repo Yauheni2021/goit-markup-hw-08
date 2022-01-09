@@ -1,0 +1,38 @@
+.container {
+  min-width: 200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  .hero & {
+    max-width: 360px;
+    padding: 0;
+    text-align: center;
+    @media screen and (min-width: $desktop) {
+      max-width: 696px;
+    }
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+
+  .page-header & {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
+  }
+
+  .footer & {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+}
