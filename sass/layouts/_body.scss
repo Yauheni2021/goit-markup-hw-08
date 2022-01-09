@@ -1,0 +1,13 @@
+body {
+  font-family: $current-font;
+  color: $current-text-color;
+  background-color: $current-light-color;
+
+  @media screen and (min-width: $mobile) {
+    padding-top: 61px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 81px;
+  }
+}
