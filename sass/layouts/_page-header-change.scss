@@ -1,0 +1,46 @@
+.page-header--change {
+  background-color: $change-background-color;
+  border-bottom: 1px solid $change-border-color;
+  @include transition(background-color, $duration, $function);
+}
+
+.logo--header--change {
+  color: $current-light-color;
+  @include transition(color, $duration, $function);
+}
+
+.link__navigation--change {
+  color: $current-light-color;
+  @include transition(color, $duration, $function);
+
+  @media screen and (min-width: 300px) {
+    color: $current-title-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    color: $current-light-color;
+  }
+}
+
+.is-current--change {
+  color: $accent-color;
+  @include transition(color, $duration, $function);
+
+  @media screen and (min-width: 300px) {
+    color: $accent-color;
+  }
+}
+
+.link__contacts--change {
+  color: $current-text-color;
+  @include transition(color, $duration, $function);
+
+  @media screen and (min-width: $tablet) {
+    color: $footer-link-color;
+  }
+}
+
+.button__menu-open--change {
+  color: $footer-link-color;
+  @include transition(color, $duration, $function);
+}
