@@ -340,7 +340,7 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   display: block;
-  padding: 25px 16px;
+  margin-bottom: 32px;
   color: #212121;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1307,15 +1307,18 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
+
+.footer__item:not(:last-child) {
+  margin-bottom: 10px;
+}
 @media screen and (min-width: 1200px) {
-  .footer__address {
-    margin-bottom: 5px;
+  .footer__item:not(:last-child) {
+    margin-bottom: 9px;
   }
 }
 
 .footer__link {
   display: block;
-  margin-bottom: 4px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -1323,11 +1326,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 1200px) {
-  .footer__link {
-    margin-bottom: 5px;
-  }
 }
 .footer__link:hover, .footer__link:focus {
   color: #2196f3;
@@ -1527,6 +1525,11 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: auto;
+}
+@media screen and (max-width: 767px) {
+  .overlay {
+    overflow-y: scroll;
+  }
 }
 .portfolio-card:hover .overlay, .portfolio-card:focus .overlay, .portfolio-card:focus-within .overlay {
   -webkit-transform: translateY(0);

@@ -15,14 +15,18 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  }
+
+
+.footer__item:not(:last-child) {
+  margin-bottom: 10px;
   @media screen and(min-width: $desktop) {
-    margin-bottom: 5px;
+    margin-bottom: 9px;
   }
 }
 
 .footer__link {
   display: block;
-  margin-bottom: 4px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -31,9 +35,6 @@
 
   transition: color $duration $function;
 
-  @media screen and(min-width: $desktop) {
-    margin-bottom: 5px;
-  }
 
   &:hover,
   &:focus {

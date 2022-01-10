@@ -1,8 +1,8 @@
 .link__navigation {
   @include link(40px, 1.18);
   display: block;
-  padding: 25px 16px;
-
+  // padding: 25px 16px;
+  margin-bottom: 32px;
   color: $current-title-color;
   @include transition(color, $duration, $function);
 
